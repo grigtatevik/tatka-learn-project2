@@ -1,0 +1,300 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    height: 100%;
+}
+
+.page-wrapper {
+    min-height: 100%;
+}
+
+.page-wrapper::after {
+    content: "";
+    height: 220px;
+    display: block;
+}
+
+.content {
+    width: 980px;
+    margin:0 auto; 
+}
+
+.header {
+    height: 210px;
+    background-color: #dcdcdc;
+    overflow: hidden;
+}
+
+.logo {
+    margin-top: 45px;
+    float: left;
+}
+
+.phone-number {
+    padding: 46px 15px;
+    float: right;
+    color: #777;
+    font-size: 40px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+    line-height: 47px;
+}
+
+.phone2 {
+    padding-top: 26px;
+}
+
+.content-menu {
+    background-color: #777;
+    font-size: 30px;
+    font-weight: normal;
+    padding: 26px;
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: regular;
+    height: 28px;
+}
+
+.content-menu ul {
+    padding-left: 16px;
+}
+
+.content-menu li {
+    display: inline-block;
+    padding: 0 19px;
+    height: 25px;
+}
+
+.content-menu a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.content-menu a:hover {
+    text-decoration: underline;
+}
+
+.content-menu li:not(:last-child) {
+    border-right: 2px solid #fff;
+}
+
+.content-center {
+    overflow: hidden;
+    margin: 29px 0 195px 0;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+p {
+    font-size: 14px;
+    font-family: 'PT Sans', sans-serif;
+    font-style: italic;
+    margin: 5px;
+}
+
+p1 {
+    margin: 5px;
+}
+
+.content-left {
+    color: #fff;
+    width: 283px;
+    background-color: #767676;
+    padding: 0 33px;
+    float: left;
+    height: 560px;
+}
+
+.text {
+    text-align: right;
+    margin-top: 35px;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: 'PT Sans', sans-serif;
+    margin-top: 22px;
+}
+
+.content-right {
+    font-size: 14px;
+    color: #767676;
+    width: 571px;
+    float: right;
+}
+
+.slider {
+    height: 400px;
+    position: relative;
+}
+
+.circle {
+    opacity: 0.5;
+}
+
+.circle1 {
+    position: absolute;
+    background: #d0d4f3;
+    width: 325px;
+    height: 317px;
+    border-radius: 155px;
+    margin-top: 109px;
+    left: 50%;
+    margin-left: -618px;
+}
+
+.circle2 {
+    position: absolute;
+    background: #d4e2d0;
+    width: 177px;
+    height: 175px;
+    border-radius: 155px;
+    margin-top: 50px;
+    margin-left: -370px;
+    left: 50%;
+}
+
+.circle3 {
+    position: absolute;
+    background: #fae4d1;
+    width: 300px;
+    height: 300px;
+    border-radius: 155px;
+    margin-top: 50px;
+    left: 50%;
+    margin-left: -216px;
+}
+
+.circle4 {
+    position: absolute;
+    background: #d4e2d0;
+    width: 177px;
+    height: 175px;
+    border-radius: 155px;
+    margin-top: 202px;
+    margin-left: 453px;
+    left: 50%;
+}
+
+.circle5 {
+    position: absolute;
+    background: #fae4d1;
+    width: 300px;
+    height: 300px;
+    border-radius: 155px;
+    margin-top: 50px;
+    margin-left: 330px;
+    left: 50%;
+    top: -112px;
+}
+
+.circle6 {
+    position: absolute;
+    background: #d0d4f3;
+    width: 228px;
+    height: 226px;
+    border-radius: 155px;
+    margin-top: 74px;
+    left: 50%;
+    margin-left: 143px;
+}
+
+.footer {
+    height: 220px;
+    margin-top: -220px;
+    background: #767676;
+}
+
+.bottom-container {
+    padding-top: 45px;
+    color: #fff;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.copytext {
+    float: left;
+}
+
+.bottom-container-menu {
+    float: left;
+    margin-left: 159px;
+}
+
+.bottom-right::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("./images/before.png");
+    width: 36px;
+    height: 38px;
+    top: 5px;
+    left: 0;
+}
+
+.bottom-right {
+    float: right;
+    position: relative;
+    padding-left: 63px;
+}
+
+a{
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    z-index: 2;
+}
+
+.slider {
+    z-index: 1;
+}
+
+.content-center {
+    z-index: 3;
+}
+
+.footer {
+    z-index: 4;
+}
+
+
+.proverka {
+    position: absolute;
+    background-image: url("./images/pixelplus.ru-test-v2.jpg");
+    width: 1400px;
+    height: 1715px;
+    left: 221px;
+    top: -20px;
+    opacity: 0.5;
+    display: none;
+}
+
+
