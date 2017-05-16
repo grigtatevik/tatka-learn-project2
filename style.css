@@ -1,11 +1,25 @@
-html,
+html {
+    height: 100%;
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-size: 14px;
     line-height: 22px;
     height: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .page-wrapper {
@@ -18,9 +32,14 @@ body {
     display: block;
 }
 
-.content {
+.work-area {
     width: 980px;
-    margin:0 auto; 
+    margin: 0 auto; 
+}
+
+.logo {
+    width: 273px;
+    height: 100px;
 }
 
 .header {
@@ -32,6 +51,40 @@ body {
 .logo {
     margin-top: 45px;
     float: left;
+}
+
+.menu {
+    background-color: #777;
+    font-size: 30px;
+    font-weight: normal;
+    padding: 26px;
+    margin: 0;
+    font-weight: regular;
+    height: 28px;
+}
+
+.menu .work-area ul {
+    padding-left: 16px;
+}
+
+.menu .work-area li {
+    display: inline-block;
+    padding: 0 19px;
+    height: 25px;
+}
+
+.menu .work-area a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu .work-area a:hover {
+    text-decoration: underline;
+}
+
+.menu .work-area li:not(:last-child) {
+    border-right: 2px solid #fff;
 }
 
 .phone-number {
@@ -46,92 +99,6 @@ body {
 
 .phone2 {
     padding-top: 26px;
-}
-
-.content-menu {
-    background-color: #777;
-    font-size: 30px;
-    font-weight: normal;
-    padding: 26px;
-    margin: 0;
-    font-family: 'PT Sans', sans-serif;
-    font-weight: regular;
-    height: 28px;
-}
-
-.content-menu ul {
-    padding-left: 16px;
-}
-
-.content-menu li {
-    display: inline-block;
-    padding: 0 19px;
-    height: 25px;
-}
-
-.content-menu a {
-    display: block;
-    text-decoration: none;
-    color: #fff;
-}
-
-.content-menu a:hover {
-    text-decoration: underline;
-}
-
-.content-menu li:not(:last-child) {
-    border-right: 2px solid #fff;
-}
-
-.content-center {
-    overflow: hidden;
-    margin: 29px 0 195px 0;
-}
-
-h1 {
-    font-size: 40px;
-    font-family: 'PT Sans', sans-serif;
-    font-weight: bold;
-    margin-bottom: 35px;
-}
-
-p {
-    font-size: 14px;
-    font-family: 'PT Sans', sans-serif;
-    font-style: italic;
-    margin: 5px;
-}
-
-p1 {
-    margin: 5px;
-}
-
-.content-left {
-    color: #fff;
-    width: 283px;
-    background-color: #767676;
-    padding: 0 33px;
-    float: left;
-    height: 560px;
-}
-
-.text {
-    text-align: right;
-    margin-top: 35px;
-    font-weight: normal;
-}
-
-h2 {
-    font-size: 40px;
-    font-family: 'PT Sans', sans-serif;
-    margin-top: 22px;
-}
-
-.content-right {
-    font-size: 14px;
-    color: #767676;
-    width: 571px;
-    float: right;
 }
 
 .slider {
@@ -210,16 +177,70 @@ h2 {
     margin-left: 143px;
 }
 
+.content {
+    overflow: hidden;
+    margin: 30px 0 195px 0;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 0px 36px;
+}
+
+.content-left {
+    color: #fff;
+    width: 350px;
+    background-color: #767676;
+    float: left;
+}
+
+.news-list {
+    padding: 0px 30px 66px;
+}
+
+.news-date {
+    font-style: italic;
+    padding: 7px 5px 0;
+}
+
+.news-name {
+    padding: 0px 4px 15px;
+}
+
+.all-news-link {
+    padding: 13px 22px 30px;
+    text-align: right;
+}
+
+.content-right {
+    color: #767676;
+    width: 571px;
+    float: right;
+}
+
+.text {
+    margin: 0 0 22px 1px;
+}
+
+.text2 {
+    margin-bottom: 43px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-top: 22px;
+}
+
 .footer {
     height: 220px;
     margin-top: -220px;
     background: #767676;
 }
 
-.bottom-container {
+.footer-container {
     padding-top: 45px;
     color: #fff;
-    font-family: 'PT Sans', sans-serif;
     font-size: 14px;
     overflow: hidden;
 }
@@ -228,12 +249,16 @@ h2 {
     float: left;
 }
 
-.bottom-container-menu {
+.footer-menu {
     float: left;
     margin-left: 159px;
 }
 
-.bottom-right::before {
+.footer-menu li{
+    padding-bottom: 4px;
+}
+
+.developer::before {
     content: "";
     display: block;
     position: absolute;
@@ -244,7 +269,7 @@ h2 {
     left: 0;
 }
 
-.bottom-right {
+.developer {
     float: right;
     position: relative;
     padding-left: 63px;
@@ -258,43 +283,16 @@ a:hover {
     text-decoration: none;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.header {
-    z-index: 2;
-}
-
-.slider {
-    z-index: 1;
-}
-
-.content-center {
-    z-index: 3;
-}
-
-.footer {
-    z-index: 4;
-}
-
-
 .proverka {
     position: absolute;
     background-image: url("./images/pixelplus.ru-test-v2.jpg");
     width: 1400px;
     height: 1715px;
-    left: 221px;
+    left: -56px;
     top: -20px;
     opacity: 0.5;
-    display: none;
+    /*display: none;*/
 }
+
 
 
