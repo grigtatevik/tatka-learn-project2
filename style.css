@@ -61,8 +61,6 @@ li {
     margin: 0;
     font-weight: regular;
     height: 28px;
-    position: relative;
-    z-index: 100;
 }
 
 .menu .work-area ul {
@@ -101,6 +99,7 @@ li {
 }
 
 .slider {
+    overflow: hidden;
     height: 400px;
     position: relative;
     background-color: #f8f8f8;
@@ -173,7 +172,6 @@ li {
 
 .content {
     overflow: hidden;
-    position: relative;
     z-index: 200;
     padding: 30px 0 195px;
     background-color: #fff;
@@ -281,7 +279,7 @@ a:hover {
 }
 
 .proverka {
-    position: relative;
+    position: absolute;
     background-image: url("./images/pixelplus.ru-test-v2.jpg");
     width: 1400px;
     height: 1715px;
