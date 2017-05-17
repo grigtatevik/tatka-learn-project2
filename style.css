@@ -95,10 +95,7 @@ li {
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 300;
     line-height: 47px;
-}
-
-.phone2 {
-    padding-top: 26px;
+    padding-bottom: 26px;
 }
 
 .slider {
@@ -106,74 +103,68 @@ li {
     position: relative;
 }
 
-.circle {
+.slider-circle {
     opacity: 0.5;
+    left: 50%;
 }
 
-.circle1 {
+.slider-circle1 {
     position: absolute;
     background: #d0d4f3;
     width: 325px;
     height: 317px;
     border-radius: 155px;
-    margin-top: 109px;
-    left: 50%;
+    top: 109px;
     margin-left: -618px;
 }
 
-.circle2 {
+.slider-circle2 {
     position: absolute;
     background: #d4e2d0;
     width: 177px;
     height: 175px;
     border-radius: 155px;
-    margin-top: 50px;
+    top: 50px;
     margin-left: -370px;
-    left: 50%;
 }
 
-.circle3 {
+.slider-circle3 {
     position: absolute;
     background: #fae4d1;
     width: 300px;
     height: 300px;
     border-radius: 155px;
-    margin-top: 50px;
-    left: 50%;
+    top: 50px;
     margin-left: -216px;
 }
 
-.circle4 {
+.slider-circle4 {
     position: absolute;
     background: #d4e2d0;
     width: 177px;
-    height: 175px;
+    height: 177px;
     border-radius: 155px;
-    margin-top: 202px;
+    top: 202px;
     margin-left: 453px;
-    left: 50%;
 }
 
-.circle5 {
+.slider-circle5 {
     position: absolute;
     background: #fae4d1;
     width: 300px;
     height: 300px;
     border-radius: 155px;
-    margin-top: 50px;
+    top: -64px;
     margin-left: 330px;
-    left: 50%;
-    top: -112px;
 }
 
-.circle6 {
+.slider-circle6 {
     position: absolute;
     background: #d0d4f3;
     width: 228px;
     height: 226px;
     border-radius: 155px;
-    margin-top: 74px;
-    left: 50%;
+    top: 74px;
     margin-left: 143px;
 }
 
@@ -254,7 +245,7 @@ h2 {
     margin-left: 159px;
 }
 
-.footer-menu li{
+.footer-menu li {
     padding-bottom: 4px;
 }
 
@@ -275,7 +266,7 @@ h2 {
     padding-left: 63px;
 }
 
-a{
+a {
     color: #fff;
 }
 
