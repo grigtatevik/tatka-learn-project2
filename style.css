@@ -45,7 +45,6 @@ li {
 .header {
     height: 210px;
     background-color: #dcdcdc;
-    overflow: hidden;
 }
 
 .logo {
@@ -57,14 +56,14 @@ li {
     background-color: #777;
     font-size: 30px;
     font-weight: normal;
-    padding: 26px;
+    padding: 26px 0 26px;
     margin: 0;
     font-weight: regular;
     height: 28px;
 }
 
 .menu .work-area ul {
-    padding-left: 16px;
+    margin-left: 16px;
 }
 
 .menu .work-area li {
@@ -74,7 +73,6 @@ li {
 }
 
 .menu .work-area a {
-    display: block;
     text-decoration: none;
     color: #fff;
 }
@@ -88,14 +86,14 @@ li {
 }
 
 .phone-number {
-    padding: 46px 15px;
+    padding: 46px 0 26px;
     float: right;
     color: #777;
     font-size: 40px;
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 300;
     line-height: 47px;
-    padding-bottom: 26px;
+    width: 256px;
 }
 
 .slider {
@@ -108,79 +106,64 @@ li {
 .slider-circle {
     opacity: 0.5;
     left: 50%;
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
 }
 
 .slider-circle1 {
-    position: absolute;
     background: #d0d4f3;
     width: 325px;
-    height: 317px;
-    border-radius: 155px;
-    top: 109px;
-    margin-left: -618px;
+    height: 325px;
+    transform: translate(-618px, 109px);
 }
 
 .slider-circle2 {
-    position: absolute;
-    background: #d4e2d0;
-    width: 177px;
-    height: 175px;
-    border-radius: 155px;
-    top: 50px;
-    margin-left: -370px;
-}
-
-.slider-circle3 {
-    position: absolute;
-    background: #fae4d1;
-    width: 300px;
-    height: 300px;
-    border-radius: 155px;
-    top: 50px;
-    margin-left: -216px;
-}
-
-.slider-circle4 {
-    position: absolute;
     background: #d4e2d0;
     width: 177px;
     height: 177px;
-    border-radius: 155px;
-    top: 202px;
-    margin-left: 453px;
+    transform: translate(-370px, 50px);
 }
 
-.slider-circle5 {
-    position: absolute;
+.slider-circle3 {
     background: #fae4d1;
     width: 300px;
     height: 300px;
-    border-radius: 155px;
-    top: -64px;
-    margin-left: 330px;
+    transform: translate(-216px, 50px);
+}
+
+.slider-circle4 {
+    background: #d4e2d0;
+    width: 177px;
+    height: 177px;
+    transform: translate(453px, 202px);
+}
+
+.slider-circle5 {
+    background: #fae4d1;
+    width: 300px;
+    height: 300px;
+    transform: translate(330px, -64px);
 }
 
 .slider-circle6 {
-    position: absolute;
     background: #d0d4f3;
-    width: 228px;
+    width: 226px;
     height: 226px;
-    border-radius: 155px;
-    top: 74px;
-    margin-left: 143px;
+    transform: translate(143px, 74px);
 }
 
 .content {
-    overflow: hidden;
     z-index: 200;
     padding: 30px 0 195px;
     background-color: #fff;
 }
 
-h1 {
+h2 {
     font-size: 40px;
     font-weight: bold;
-    padding: 0px 36px;
+    padding: 25px 35px;
+    margin: 0;
 }
 
 .content-left {
@@ -191,20 +174,20 @@ h1 {
 }
 
 .news-list {
-    padding: 0px 30px 66px;
+    padding: 4px 55px 66px 33px;
 }
-
+ 
 .news-date {
     font-style: italic;
-    padding: 7px 5px 0;
+    padding: 7px 2px 0;
 }
 
 .news-name {
-    padding: 0px 4px 15px;
+    padding: 0px 2px 15px;
 }
 
 .all-news-link {
-    padding: 13px 22px 30px;
+    padding: 13px 1px 30px;
     text-align: right;
 }
 
@@ -214,17 +197,15 @@ h1 {
     float: right;
 }
 
-.text {
-    margin: 0 0 22px 1px;
-}
-
-.text2 {
-    margin-bottom: 43px;
-}
-
-h2 {
+h1 {
     font-size: 40px;
-    margin-top: 22px;
+    font-weight: normal;
+    padding: 22px 0px 32px;
+    margin: 0;
+}
+
+p {
+    margin: 0 0 22px 1px;
 }
 
 .footer {
@@ -237,7 +218,6 @@ h2 {
     padding-top: 45px;
     color: #fff;
     font-size: 14px;
-    overflow: hidden;
 }
 
 .copytext {
@@ -261,13 +241,15 @@ h2 {
     width: 36px;
     height: 38px;
     top: 5px;
-    left: 0;
+    left: 10px;
 }
 
 .developer {
     float: right;
     position: relative;
-    padding-left: 63px;
+    padding-left: 56px;
+    margin-right: 10px;
+    width: 170px;
 }
 
 a {
@@ -289,4 +271,8 @@ a:hover {
     /*display: none;*/
 }
 
-
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
