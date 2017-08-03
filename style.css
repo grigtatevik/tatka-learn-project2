@@ -260,17 +260,6 @@ a:hover {
     text-decoration: none;
 }
 
-.proverka {
-    position: absolute;
-    background-image: url("./images/pixelplus.ru-test-v2.jpg");
-    width: 1400px;
-    height: 1715px;
-    left: -56px;
-    top: -20px;
-    opacity: 0.5;
-    /*display: none;*/
-}
-
 .clearfix::after {
     content: "";
     display: block;
